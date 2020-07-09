@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EasyEase</title>
+    <link rel="stylesheet" href="./css/blue-theme.css">
+    <link rel="stylesheet" href="./css/community.css">
+    <link rel="stylesheet" href="./css/upload.css">
+</head>
+<body>
+    <%- include('./partials/header') -%>
+    <div class="community-page">
+    <p class="page-heading">Our Community Members</p>
+    <div class="community-page-header">
+        <div class="view-count">
+            <p class="community-header-lable">Total Views</p><p class="total-views"></p>
+        </div>
+        <div class="memeber-search-box">
+            <input type="text" placeholder="Search your username">
+        </div>
+        <div class="like-count">
+            <p class="community-header-lable">Total Likes</p><p class="total-likes"></p>
+        </div>
+    </div>
+   <div class="member-card-wrapper">
+    <div class="member-card">
+        <div class="member-card-body">
+            <button class="member-delete card-btn">Delete</button>
+            <div class="member-pic"></div>
+            <button class="member-update card-btn">Update</button>
+        </div>
+        <div class="member-card-footer">
+            <div class="member-name"></div>
+            <div>Credit: <span class="member-credit"></span></div>
+        </div>
+    </div>
+    <div class="member-card">
+        <div class="member-card-body">
+            <button class="member-delete card-btn">Delete</button>
+            <div class="member-pic"></div>
+            <button class="member-update card-btn">Update</button>
+        </div>
+        <div class="member-card-footer">
+            <div class="member-name"></div>
+            <div>Credit: <span class="member-credit"></span></div>
+        </div>
+    </div>
+    <div class="member-card">
+        <div class="member-card-body">
+            <button class="member-delete card-btn">Delete</button>
+            <div class="member-pic"></div>
+            <button class="member-update card-btn">Update</button>
+        </div>
+        <div class="member-card-footer">
+            <div class="member-name"></div>
+            <div>Credit: <span class="member-credit"></span></div>
+        </div>
+    </div>
+   </div>
+    </div>
+    <%- include('./partials/footer') -%>
+    <script src="./js/main.js" ></script>
+    <script src="./js/community.js"></script>
+</body>
+</html>

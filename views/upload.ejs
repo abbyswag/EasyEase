@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EasyEase</title>
+    <link rel="stylesheet" href="./css/blue-theme.css">
+</head>
+<body>
+    <%- include('./partials/header') -%>
+<div class="upload-page">
+    <p class="page-heading">Here you can upload your work</p>
+    <div class="upload-options">
+        <div class="upload-page-opt-btn upload-model-page">Upload 3d model</div>
+        <div class="upload-page-opt-btn upload-animation-page">Upload animation</div>
+    </div>
+    <form ref='uploadForm' class='uploadForm' action="model/upload" method="POST" encType="multipart/form-data">
+        <label for="title">Title</label>
+        <input type="text" name="title">
+        <label for="creator">Creator</label><p class="upload-form-msg"></p>
+        <input type="text" name="username">
+        <label for="category">Category</label>
+        <div class="model-categories">
+            <p>Pick one</p>
+            <div class="category-list">
+                <div class="category-name">High poly</div>
+                <div class="category-name">Low poly</div>
+                <div class="category-name">3d animation</div>
+                <div class="category-name">2d animation</div>
+            </div>
+        </div>
+        <input type="text" name="category" style="display: none;">
+        <label for="subcategory">Sub-Category</label>
+        <div class="model-sub-categories">
+            <p>Pick one</p>
+            <div class="sub-category-list">
+                <div class="sub-category-name"></div>
+                <div class="sub-category-name">Interior designs</div>
+                <div class="sub-category-name">Characters</div>
+                <div class="sub-category-name">Exteriror designs</div>
+                <div class="sub-category-name">A.R development</div>
+                <div class="sub-category-name">Game assets</div>
+                <div class="sub-category-name">Abstract 3d models</div>
+                <div class="sub-category-name">Electronics gadgets</div>
+                <div class="sub-category-name">Simulations</div>
+            </div>
+        </div>
+        <input type="text" name="subcategory" style="display: none;">
+        <label for="thumbnail">Pick a thumbnail for your Model</label>
+        <input type="file" name="thumbnailImg"/>
+        <label for="samplfile">Your work file</label>
+        <input type="file" name="sampleFile"/>
+        <input type="submit" value='Upload' class="upload-form-btn blue-btn"/>
+    </form>
+</div>
+<%- include('./partials/footer') -%>
+    <script src="./js/main.js" ></script>
+    <script src="./js/upload.js"></script>
+</body>
+</html>
