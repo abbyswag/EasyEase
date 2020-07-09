@@ -1,11 +1,12 @@
 # EasyEase
 This is fully functional 3d model sharing website.
-# Dependcies
-express
-ejs
-mongodb
 # Languages
-Html
-CSS
+Html / 
+CSS / 
 Javascript
+# Dependcies
+express / 
+ejs / 
+mongodb
+
 
