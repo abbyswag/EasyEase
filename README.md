@@ -1,5 +1,5 @@
 # EasyEase
-This is fully functional 3d model sharing website.
+This is a 3d model sharing website.
 # Languages
 Html / 
 CSS / 
