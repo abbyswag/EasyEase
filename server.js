@@ -37,4 +37,4 @@ app.get('/community',(req,res)=>{
 
 
 //server started
-app.listen(process.env.PORT,()=>console.log(`Server is started at ${process.env.PORT}`))
+app.listen(8080,()=>console.log(`Server is started at ${8080}`))
